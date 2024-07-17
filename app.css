@@ -1,0 +1,39 @@
+
+
+/* styles.css */
+.buttons form {
+    display: flex;  /* Flexboxを使用して横並びに配置 */
+    gap: 10px;  /* ボタン間の間隔を設定 */
+}
+
+.search {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table thead tr {
+    background-color: lightgreen;
+}
+
+table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.preview_button_in_table {
+    border: 2px solid deepskyblue;
+    background: deepskyblue;
+    color: white;
+}
+
+.edit_button_in_table{
+    border: 2px solid limegreen;
+    background: limegreen;
+    color: white;
+}

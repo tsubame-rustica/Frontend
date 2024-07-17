@@ -1,0 +1,74 @@
+input, select, button, textarea {
+    font-family: inherit; /* 入力欄のフォントを統一 */
+}
+.form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:480px) {
+    .form {
+        margin-top: 40px;
+    }
+}
+
+.form-item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    align-items: center;
+}
+
+.form-item:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.form-item-label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+}
+
+.form-item-input {
+  border: 1px solid #000;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 44px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.form-item-textarea {
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.send_button {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: mediumseagreen;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    width: 280px;
+    font-size: 20px;
+
+}

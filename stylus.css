@@ -1,0 +1,38 @@
+input, select, button, textarea {
+    font-family: inherit; /* 入力欄のフォントを統一 */
+}
+
+input {
+    border-radius: 6px;
+
+}
+
+button {
+    border-radius: 6px;
+    border: 1px solid;
+    background: white;
+    color: black;
+    transition: all 0.2s;
+}
+button:hover {
+    background: black;
+    color: white;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+table thead{
+}
+table tbody{
+    border-top: 1px solid #ddd;
+}
+table tbody td, th {
+    border-bottom: solid 1px #ddd;
+    padding: 10px;
+}
