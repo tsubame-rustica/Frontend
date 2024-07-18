@@ -27,13 +27,11 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
     </form>
 </div>
 <table class="plant_db">
-    <div class="search">
-        <label>
-            <input type="text" placeholder="植物検索">
-            <button type="submit">検索</button>
-            <button class="plant_db_filter">絞り込み</button>
-        </label>
-    </div>
+    <label class="search">
+        <input type="text" placeholder="植物検索">
+        <button type="submit">検索</button>
+        <button class="plant_db_filter">絞り込み</button>
+    </label>
     <thead>
     <tr>
         <th>id</th>
