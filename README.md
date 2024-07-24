@@ -35,9 +35,7 @@ git config --global user.email "登録しているメールアドレス"
 1.  まず作業用のディレクトリを作成してpowershellで作成したディレクトリを開く
 2.  **（初回のみ）** 以下のコマンドを実行し、初期設定から最新のプロジェクトを取り込む
 ```
-git init
-git remote add https://github.com/tsubame-rustica/Frontend.git
-git pull origin master
+git clone https://github.com/tsubame-rustica/Frontend.git
 ```
 を実行する
 
