@@ -87,3 +87,6 @@ git clone https://github.com/tsubame-rustica/Frontend.git
 - ### git merge [ブランチ名]
     コミットされたブランチを`[ブランチ名]`にマージする
     `git merge main`で`git fetch`で取り込んだ最新のプロジェクトを`main`ブランチに反映させる
+
+
+1.  追記：korosuke
