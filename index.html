@@ -1,0 +1,145 @@
+<!--htmlファイルでは先頭にこのタグを記述するというルールがある-->
+<!DOCTYPE html>
+<!--HTMLで記述された文書であることを示す-->
+<html>
+<!--Webブラウザでは表示されない設定や内容を記述する-->
+<head>
+    <!--文字コードを指定-->
+    <meta charset="UTF-8">
+    <!--Webページのタイトルを指定-->
+    <title>花回廊デザイン</title>
+    <!--ファイルを読み込む-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+    <div class="container">
+        <!--headerを指定-->
+        <header>
+            <tr>
+                <!--花回廊の写真-->
+                <td><img src="header_logo.png"></td>
+                <!--検索-->
+                <td><img src="スクリーンショット (15).png"><a href="ああああ" target="_blank" rel="noopener noreferre">search</a></td>
+                <!--Language-->
+                <td><img src="スクリーンショット (16).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Language</a></td>
+                <!--Menu-->
+                <td><img src="スクリーンショット (17).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Menu</a></td>
+            </tr>             
+        </header>
+        <main>
+            <div class="type-menu">
+                <div class="type active"><h2>図鑑</h2></div>
+                <div class="type"><h2>植物マップ</h2></div>
+                <div class="type"><h2>植物一覧</h2></div>
+            </div>
+            <div class="zukan">
+                <div class="kisetu">
+                    <div class="haru"><h3>春</h3></div>
+                    <div class="haru"><h3>夏</h3></div>
+                    <div class="haru"><h3>秋</h3></div>
+                    <div class="haru"><h3>冬</h3></div>
+                    <div class="haru"><h3>年中</h3></div>
+                </div>
+                <div class="panel">
+                    <div class="bar">1月<input type="range" id="SlideBar" min="1" max="12" step="1">12月</div>
+                    <div id="month-info"></div>
+                </div>
+                <div class="change">
+                    <div class="botton">
+                        <button type="kirikae">表示切替</button>
+                        <div class="a">
+                            <button type="kirikae">季節切替</button>
+                            <button type="kirikae">月切替</button>
+                            <button type="kirikae">分類表示</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-area">
+                <div class="panel active">
+                    <img src="./image/guide_map.png" alt="園内マップ">
+                    <div class="area-menu">
+                        <div class="area active"><h3>エリア1</h3></div>
+                        <div class="area"><h3>エリア2</h3></div>
+                        <div class="area"><h3>エリア3</h3></div>
+                    </div>
+                </div>
+            </div>
+            <div class="itiran">
+                <div class="search">検索バー</div>
+            </div>
+            <div class="list">
+                <ul id="flower-list">
+                    <!-- DBで画像や名前を取得しliタグを生成 -->
+                    <!-- <li id="インデックス"><img src="DBから取得"><span>花の名前</span></li> -->
+                    <!-- liタグをクリックし、jsでdata属性を読みとり非同期通信を行う -->
+                    <li data="00001"><img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像"><span>アオノリュウゼツラン</span></li>
+                    <li data="00002"><img src="./image/flower/アカリファ.jpg" alt="植物画像"><span>アカリファ</span></li>
+                    <li data="00003"><img src="./image/flower/アリストロキア　ギガンティア.jpg" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
+                    <li data="00004"><img src="./image/flower/アルカンタレア　インペリアリス.jpg" alt="植物画像"><span></span></li>
+                    <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li>
+                    <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
+                    <li><img src="./image/flower/カカオ.jpg" alt="植物画像"><span></span></li>
+                    <li><img src="./image/flower/グレビレアピーチズアンドクリーム.jpg" alt="植物画像"><span></span></li>
+                    <li><img src="" alt="植物画像"><span></span></li>
+                    <li><img src="" alt="植物画像"><span></span></li>
+                </ul>
+            </div>
+            <!-- モーダルウィンドウ -->
+            <div class="modal" id="modal">
+                <button type="button" class="close-bg">
+                    <div class="modal-inner">
+                        <div class="close">閉じる</div>
+                        <!-- DB接続しPHPで生成 -->
+                        <!-- モーダルウィンドウもナビゲーションボタンやスワイプでスライドできるようにする -->
+                        <!-- 表示されてないページは読み込みをしないか非同期get通信で対応 -->
+                        <div class="modal-content">
+                            <!-- Swiper.jsで画像をスワイプでスライドできるようにする -->
+                            <div class="img">
+                                <img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像">
+                            </div>
+                            <div class="profile">
+                                <table>
+                                    <tr>
+                                        <td>名前</td>
+                                        <td>hogehuga</td>
+                                    </tr>
+                                    <tr>
+                                        <td>学名</td>
+                                        <td>hogehuga</td>
+                                    </tr>
+                                    <tr>
+                                        <td>分類</td>
+                                        <td>hogehuga</td>
+                                    </tr>
+                                    <tr>
+                                        <td>原産地</td>
+                                        <td>バチカン市国</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="description">
+                                <p>アオノリュウゼツランは、南アメリカ原産の多肉植物です。葉の形が龍の尾に似ていることから名付けられました。葉の先端が尖っているのが特徴で、葉の色は緑色です。花は、葉の間から伸びる花茎の先に咲きます。花は、赤やピンク、白などの色をしています。アオノリュウゼツランは、育てやすい植物ですが、日当たりが良い場所で育てるとより元気に育ちます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                
+            </div>
+        </main>
+        <!--footerを指定-->
+        <footer>
+            <address>
+                <p>
+                    〒683-0217 鳥取県西伯郡南部町鶴田110
+                </p>
+                <small>
+                    &copy; 2019 Tottori Hanakairo-Flower Park.
+                </small>
+            </address>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
