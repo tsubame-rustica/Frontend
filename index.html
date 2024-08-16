@@ -17,29 +17,31 @@
         <!--headerを指定-->
         <header>
             <tr>
-                <!--花回廊の写真-->
-                <td><img src="header_logo.png"></td>
-                <!--検索-->
-                <td><img src="スクリーンショット (15).png"><a href="ああああ" target="_blank" rel="noopener noreferre">search</a></td>
-                <!--Language-->
-                <td><img src="スクリーンショット (16).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Language</a></td>
-                <!--Menu-->
-                <td><img src="スクリーンショット (17).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Menu</a></td>
+                <div class="fixed">
+                    <!--花回廊の写真-->
+                    <div class="logo"><td><img src="header_logo.png"></td></div>
+                    <!--検索-->
+                    <div class="fixed_right"><td><img src="スクリーンショット (15).png"><a href="ああああ" target="_blank" rel="noopener noreferre">search</a></td></div>
+                    <!--Language-->
+                    <div class="fixed_right"><td><img src="スクリーンショット (16).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Language</a></td></div>
+                    <!--Menu-->
+                    <div class="fixed_right"><td><img src="スクリーンショット (17).png"><a href="あああああ" target="_blank" rel="noopener noreferre">Menu</a></td></div>
+                </div>
             </tr>             
         </header>
         <main>
             <div class="type-menu">
-                <div class="type active"><h2>図鑑</h2></div>
-                <div class="type"><h2>植物マップ</h2></div>
-                <div class="type"><h2>植物一覧</h2></div>
+                <div class="type_active1"><h2>図鑑</h2></div>
+                <div class="type_active2"><h2>植物マップ</h2></div>
+                <div class="type_active3"><h2>植物一覧</h2></div>
             </div>
             <div class="zukan">
                 <div class="kisetu">
-                    <div class="haru"><h3>春</h3></div>
-                    <div class="haru"><h3>夏</h3></div>
-                    <div class="haru"><h3>秋</h3></div>
-                    <div class="haru"><h3>冬</h3></div>
-                    <div class="haru"><h3>年中</h3></div>
+                    <div class="spring"><h3>春</h3></div>
+                    <div class="summer"><h3>夏</h3></div>
+                    <div class="autumn"><h3>秋</h3></div>
+                    <div class="winter"><h3>冬</h3></div>
+                    <div class="year"><h3>年中</h3></div>
                 </div>
                 <div class="panel">
                     <div class="bar">1月<input type="range" id="SlideBar" min="1" max="12" step="1">12月</div>
@@ -69,21 +71,27 @@
             <div class="itiran">
                 <div class="search">検索バー</div>
             </div>
-            <div class="list">
+            <div class="flower">
                 <ul id="flower-list">
                     <!-- DBで画像や名前を取得しliタグを生成 -->
                     <!-- <li id="インデックス"><img src="DBから取得"><span>花の名前</span></li> -->
                     <!-- liタグをクリックし、jsでdata属性を読みとり非同期通信を行う -->
-                    <li data="00001"><img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像"><span>アオノリュウゼツラン</span></li>
-                    <li data="00002"><img src="./image/flower/アカリファ.jpg" alt="植物画像"><span>アカリファ</span></li>
-                    <li data="00003"><img src="./image/flower/アリストロキア　ギガンティア.jpg" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
-                    <li data="00004"><img src="./image/flower/アルカンタレア　インペリアリス.jpg" alt="植物画像"><span></span></li>
-                    <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li>
-                    <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
-                    <li><img src="./image/flower/カカオ.jpg" alt="植物画像"><span></span></li>
-                    <li><img src="./image/flower/グレビレアピーチズアンドクリーム.jpg" alt="植物画像"><span></span></li>
-                    <li><img src="" alt="植物画像"><span></span></li>
-                    <li><img src="" alt="植物画像"><span></span></li>
+                    <!--<div class="flower_left">-->
+                    <div class="flower-list1">    
+                        <li data="00001"><img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像"><span>アオノリュウゼツラン</span></li>
+                        <li data="00002"><img src="./image/flower/アカリファ.jpg" alt="植物画像"><span>アカリファ</span></li>
+                        <li data="00003"><img src="./image/flower/アリストロキア　ギガンティア.jpg" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
+                        <li data="00004"><img src="./image/flower/アルカンタレア　インペリアリス.jpg" alt="植物画像"><span></span></li>
+                        <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li>
+                    <!--</div>-->
+                    <!--<div class="flower_right">-->
+                        <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
+                        <li><img src="./image/flower/カカオ.jpg" alt="植物画像"><span></span></li>
+                        <li><img src="./image/flower/グレビレアピーチズアンドクリーム.jpg" alt="植物画像"><span></span></li>
+                        <li><img src="" alt="植物画像"><span></span></li>
+                        <li><img src="" alt="植物画像"><span></span></li>
+                    <!--</div>-->
+                    </div>
                 </ul>
             </div>
             <!-- モーダルウィンドウ -->

@@ -1,4 +1,5 @@
 #modal {
+    visibility: hidden;
     display: block;
     position: fixed;
     width: 100%;
