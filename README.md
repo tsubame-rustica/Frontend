@@ -16,7 +16,7 @@ git config --global user.email "登録しているメールアドレス"
 1.  `cd ~/.ssh`を実行する（`no such file or directory: ~/.ssh`が出たら`mkdir ~/.ssh`を実行し、再度`cd ~/.ssh`を実行）
 2.  1を実行し、.sshが開けたら`ssh-keygen -t rsa`を実行する
 3.  文字が出てくるのではじめに`id_git_rsa`と入力しEnterキーを押す。そのあと2回ほどEnterキーを押すと実行が完了する。
-4.  `Get-Content ~/.ssh/id_git_rsa.pub | clip`を実行すると公開鍵の内容がクリップボードにコピーできる。
+4.  `clip < ~/.ssh/id_git_rsa.pub`を実行すると公開鍵の内容がクリップボードにコピーできる。
 
 #### GitHub側
 1.  [GitHub](https://github.com)にログイン
@@ -35,7 +35,9 @@ git config --global user.email "登録しているメールアドレス"
 1.  まず作業用のディレクトリを作成してpowershellで作成したディレクトリを開く
 2.  **（初回のみ）** 以下のコマンドを実行し、初期設定から最新のプロジェクトを取り込む
 ```
-git clone https://github.com/tsubame-rustica/Frontend.git
+git init
+git remote add https://github.com/tsubame-rustica/Frontend.git
+git pull origin master
 ```
 を実行する
 
@@ -70,7 +72,7 @@ git clone https://github.com/tsubame-rustica/Frontend.git
 > ### gitコマンド
 - ### git init  
     リポジトリのセットアップに使用するコマンドです
-- ### git checkout [ブランチ名]
+- ## git checkout [ブランチ名]
     ブランチを移動するコマンド。ブランチを新規作成する場合は`-b`オプションを使用する
 - ### git add
     現在作業しているブランチのファイルを登録するコマンド。さまざまなオプションがある
@@ -87,6 +89,3 @@ git clone https://github.com/tsubame-rustica/Frontend.git
 - ### git merge [ブランチ名]
     コミットされたブランチを`[ブランチ名]`にマージする
     `git merge main`で`git fetch`で取り込んだ最新のプロジェクトを`main`ブランチに反映させる
-
-
-1.  追記：korosuke
