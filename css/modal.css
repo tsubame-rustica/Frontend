@@ -1,3 +1,105 @@
+
+#modal {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3f3f3f8e;
+    z-index: 1000;
+    top: 0;
+}
+
+#modal .close-bg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000;
+    border: none;
+}
+
+#modal .modal-inner {
+    display: block;
+    top: 0;
+    background-color: rgb(254, 245, 228);
+    z-index: 100;
+    margin: auto auto;
+}
+
+.modal-content .img { 
+    grid-area: img; 
+}
+
+.modal-content .description {
+    grid-area: description; 
+}
+
+.modal-content .profile { 
+    grid-area: profile; 
+}
+
+.profile table {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 表示サイズが681px以上1280px以下のときのCSS */
+#modal .modal-inner {
+    width: 60%;
+    aspect-ratio: 6 / 7;    /* アスペクト比 */
+}
+
+#modal .modal-inner .modal-content {
+    width: 90%;
+    height: 80%;
+    padding: 10% 5%;
+    display: grid; 
+    grid-template-columns: 1.1fr 0.9fr; 
+    grid-template-rows: 0.9fr 1.1fr; 
+    grid-template-areas: 
+        "img profile"
+        "description description"; 
+}
+
+#modal .modal-content img  {
+    width: 40%;
+}
+
+/* ------------------ここまで------------------ */
+
+/* 表示サイズが1281px以上のときのCSS */
+@media (min-width: 1281px) {
+    #modal .modal-inner {
+        width: 60%;
+        aspect-ratio: 1 / 1;    /* アスペクト比 */
+    }
+    
+    #modal .modal-inner .modal-content {
+        width: 100%;
+        height: 100%;
+        display: grid; 
+        grid-template-columns: 1.1fr 0.9fr; 
+        grid-template-rows: 0.9fr 1.1fr; 
+        grid-template-areas: 
+            "img profile"
+            "description description"; 
+    }
+
+    #modal .modal-content img  {
+        width: 40%;
+    }
+}
+
+/* 表示サイズが680px以下のときのCSS */
+@media (max-width: 680px) {
+    #modal .modal-inner {
+        width: 80%;
+        aspect-ratio: 9 / 16;   /* アスペクト比 */
+    }
+=======
 #modal {
     visibility: hidden;
     display: block;
