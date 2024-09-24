@@ -1,0 +1,24 @@
+div.flower {
+    width: 90%;
+    margin: 0 5%;
+}
+
+ul#flower-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+ul.flower-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flower img {
+    width: 100%;
+}

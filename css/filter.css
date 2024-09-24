@@ -1,0 +1,120 @@
+/*type-menu(図鑑，植物マップ)の全体の大きさ指定*/
+.type-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #D4FFCD;
+    width: 100%;
+    padding-left: 5%;
+    border-bottom: solid 0.1em #C8C8C8;
+}
+
+.switch-tab {
+    width: 100%;
+}
+
+.switch-tab button {
+    border: solid 0.5px #444;
+}
+
+.switch-tab > button {
+    width: 100%;
+}
+
+.filter-detail {
+    display: flex;
+    width: 100%;
+}
+
+/*type-menuの各要素type activeの配置*/
+.filter-detail button:nth-child(1){
+    position: relative;
+    padding: 0.5em;
+    background-color: #ffffff;
+    color: #E02F24;
+
+    /* 選択されたタブに適用 */
+    /* border-top: solid 0.1em #C8C8C8;
+    border-right: solid 0.1em #C8C8C8;
+    border-left: solid 0.1em #C8C8C8;
+    border-bottom: solid 0.1em #ffffff; */
+}
+
+.filter-detail button:nth-child(2) {
+    position: relative;
+    padding: 0.5em;
+    background: #D4FFCD;
+    color: #1BC92D;
+}
+
+.filter-detail button:nth-child(3) {
+    position: relative;
+    padding: 0.5em;
+    background: #D4FFCD;
+    color: #DAC967;
+}
+
+.switch-tab .filter-detail > * {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+
+.season{
+    position: relative;
+    height: 3.4em;
+    width: 100%;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.season > * {
+    width: 25%;
+}
+
+.season > * > * {
+    display: block;
+}
+
+.spring{
+    color: #FF00A8;
+}
+
+.summer{
+    color: #1CCF4E;
+}
+
+.autumn{
+    color: #F38927;
+}
+
+.winter{
+    color: #8A8282;
+}
+
+.year{
+    color: #3C7EFF;
+}
+
+.panel{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.bar{
+    display: none;
+    /*display: inline-block;*/
+    text-align: center;
+}
+
+.panel-area{
+    float: left;
+    display: none;
+}
+
+.itiran{
+    display: none;
+    float: left;
+}
