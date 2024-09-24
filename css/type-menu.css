@@ -1,6 +1,8 @@
 .type-menu {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    width: 100vw;
+    height: 10vh; 
     
 }
 
@@ -14,11 +16,11 @@
 .tab-1 > label {
     flex: 1 1;
     order: -1;
-    opacity: .5;
+    opacity: 1;
     min-width: 70px;
     padding: .6em 1em;
     border-radius: 5px 5px 0 0;
-    background-color: #2589d0;
+    background-color: rgb(50, 201, 103);
     color: #fff;
     font-size: .9em;
     text-align: center;
@@ -42,6 +44,7 @@
 
 .tab-1 label:has(:checked) {
     opacity: 1;
+    background-color: #08bd14;
 }
 
 .tab-1 label:has(:checked) + div {
