@@ -1,0 +1,100 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+.season {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 80%;
+    background-color: #fff;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 20%;
+    background-color: #fff;
+}
+
+.button-haru {
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #2589d0 0%, #2589d080 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.button-natu {
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #2589d0 0%, #2589d080 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.button-aki {
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #2589d0 0%, #2589d080 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.button-huyu {
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #2589d0 0%, #2589d080 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.button-nenzyu {
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #2589d0 0%, #2589d080 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}

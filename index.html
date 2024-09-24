@@ -13,6 +13,7 @@
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/type-menu.css">
+    <link rel="stylesheet" href="./css/filter.css">
     <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
@@ -33,9 +34,6 @@
             </tr>             
         </header>
         <main>
-            <!-- <div class="type_active1"><h2>図鑑</h2></div>
-            <div class="type_active2"><h2>植物マップ</h2></div>
-            <div class="type_active3"><h2>植物一覧</h2></div> -->
             <div class="type-menu">
                 <div class="tab-1">
                     <label id="loadtab-1">
@@ -43,7 +41,22 @@
                         図鑑
                     </label>
                     <div id="content-1">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
+                        <div class="filter">
+                            <div class="type">
+                                <button class="button-ty1">木</button>
+                                <button class="button-ty2">草</button>
+                                <button class="button-ty3">花</button>
+                                <button class="button-ty4">果物</button>
+                                <button class="button-ty5">その他</button>
+                            </div>
+                            <div class="season">
+                                <button class="button-haru">春</button>
+                                <button class="button-natu">夏</button>
+                                <button class="button-aki">秋</button>
+                                <button class="button-huyu">冬</button>
+                                <button class="button-nenzyu">年中</button>
+                            </div>
+                        </div>
                     </div>
                 
                     <label id="loadtab-2">
@@ -53,24 +66,9 @@
                     <div id="content-2">
                         ここで非同期通信を行い、植物の情報を取得し表示する
                     </div>
-                
-                    <label id="loadtab-3">
-                        <input type="radio" name="tab-1">
-                        植物一覧
-                    </label>
-                    <div id="content-3">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
-                    </div>
                 </div>     
             </div>
-            <div class="zukan">
-                <div class="kisetu">
-                    <div class="spring"><h3>春</h3></div>
-                    <div class="summer"><h3>夏</h3></div>
-                    <div class="autumn"><h3>秋</h3></div>
-                    <div class="winter"><h3>冬</h3></div>
-                    <div class="year"><h3>年中</h3></div>
-                </div>
+            <!-- <div class="zukan">
                 <div class="panel">
                     <div class="bar">1月<input type="range" id="SlideBar" min="1" max="12" step="1">12月</div>
                     <div id="month-info"></div>
@@ -98,26 +96,26 @@
             </div>
             <div class="itiran">
                 <div class="search">検索バー</div>
-            </div>
+            </div> -->
             <div class="flower">
                 <ul id="flower-list">
                     <!-- DBで画像や名前を取得しliタグを生成 -->
                     <!-- <li id="インデックス"><img src="DBから取得"><span>花の名前</span></li> -->
                     <!-- liタグをクリックし、jsでdata属性を読みとり非同期通信を行う -->
                     <!--<div class="flower_left">-->
-                    <div class="flower-list1">    
+                    <!-- <div class="flower-list1">    
                         <li data="00001"><img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像"><span>アオノリュウゼツラン</span></li>
                         <li data="00002"><img src="./image/flower/アカリファ.jpg" alt="植物画像"><span>アカリファ</span></li>
                         <li data="00003"><img src="./image/flower/アリストロキア　ギガンティア.jpg" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
                         <li data="00004"><img src="./image/flower/アルカンタレア　インペリアリス.jpg" alt="植物画像"><span></span></li>
-                        <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li>
+                        <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li> -->
                     <!--</div>-->
                     <!--<div class="flower_right">-->
-                        <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
+                        <!-- <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
                         <li><img src="./image/flower/カカオ.jpg" alt="植物画像"><span></span></li>
                         <li><img src="./image/flower/グレビレアピーチズアンドクリーム.jpg" alt="植物画像"><span></span></li>
                         <li><img src="" alt="植物画像"><span></span></li>
-                        <li><img src="" alt="植物画像"><span></span></li>
+                        <li><img src="" alt="植物画像"><span></span></li> -->
                     <!--</div>-->
                     </div>
                 </ul>

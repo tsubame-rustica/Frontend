@@ -1,8 +1,8 @@
 .type-menu {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 10vh; 
+    width: 100%;
+    height: 100%; 
     
 }
 
@@ -10,7 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
-    max-width: 500px;
+    width: 90vw;
+    
 }
 
 .tab-1 > label {
@@ -18,11 +19,13 @@
     order: -1;
     opacity: 1;
     min-width: 70px;
+    height: 3vw;
     padding: .6em 1em;
     border-radius: 5px 5px 0 0;
-    background-color: rgb(50, 201, 103);
+    background-color: rgba(125, 232, 163, 0.466);
+    border-color: #009048;
     color: #fff;
-    font-size: .9em;
+    font-size: 1.22rem;
     text-align: center;
     cursor: pointer;
 }
@@ -44,7 +47,7 @@
 
 .tab-1 label:has(:checked) {
     opacity: 1;
-    background-color: #08bd14;
+    background-color: #009048;
 }
 
 .tab-1 label:has(:checked) + div {

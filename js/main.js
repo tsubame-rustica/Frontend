@@ -79,16 +79,3 @@ document.getElementById('loadtab-2').addEventListener('click', () => {
       });
 });
 
-document.getElementById('loadtab-3').addEventListener('click', () => {
-    // 非同期でデータを取得
-    fetch('#')
-      .then(response => response.json()) // JSON形式でレスポンスをパース
-      .then(data => {
-        // データをHTMLに反映
-        const contentDiv = document.getElementById('content-3');
-        contentDiv.innerHTML = `<h2>${data.title}</h2><p>${data.body}</p>`;
-      })
-      .catch(error => {
-        console.error('エラー:', error);
-      });
-});
