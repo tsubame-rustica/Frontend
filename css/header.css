@@ -55,5 +55,6 @@ body{
 .fixed_right img{
     width: 80%;
     margin: 10%;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(42%) saturate(716%) hue-rotate(64deg) brightness(93%) contrast(92%);
 }
 

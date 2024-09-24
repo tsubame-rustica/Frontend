@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/type-menu.css">
     <link rel="stylesheet" href="./css/filter.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/flower.css">
 </head>
 <body>
     <div class="container">
@@ -38,7 +41,7 @@
                 <div class="tab-1">
                     <label id="loadtab-1">
                         <input type="radio" name="tab-1" checked>
-                        図鑑
+                        <span>図鑑</span>
                     </label>
                     <div id="content-1">
                         <div class="filter">
@@ -61,63 +64,28 @@
                 
                     <label id="loadtab-2">
                         <input type="radio" name="tab-1">
-                        植物マップ
+                        <span>植物マップ</span>
                     </label>
                     <div id="content-2">
                         ここで非同期通信を行い、植物の情報を取得し表示する
                     </div>
                 </div>     
             </div>
-            <!-- <div class="zukan">
-                <div class="panel">
-                    <div class="bar">1月<input type="range" id="SlideBar" min="1" max="12" step="1">12月</div>
-                    <div id="month-info"></div>
-                </div>
-                <div class="change">
-                    <div class="botton">
-                        <button type="kirikae">表示切替</button>
-                        <div class="a">
-                            <button type="kirikae">季節切替</button>
-                            <button type="kirikae">月切替</button>
-                            <button type="kirikae">分類表示</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-area">
-                <div class="panel active">
-                    <img src="./image/guide_map.png" alt="園内マップ">
-                    <div class="area-menu">
-                        <div class="area active"><h3>エリア1</h3></div>
-                        <div class="area"><h3>エリア2</h3></div>
-                        <div class="area"><h3>エリア3</h3></div>
-                    </div>
-                </div>
-            </div>
-            <div class="itiran">
-                <div class="search">検索バー</div>
-            </div> -->
             <div class="flower">
                 <ul id="flower-list">
                     <!-- DBで画像や名前を取得しliタグを生成 -->
                     <!-- <li id="インデックス"><img src="DBから取得"><span>花の名前</span></li> -->
-                    <!-- liタグをクリックし、jsでdata属性を読みとり非同期通信を行う -->
-                    <!--<div class="flower_left">-->
-                    <!-- <div class="flower-list1">    
-                        <li data="00001"><img src="./image/flower/アオノリュウゼツラン.jpg" alt="植物画像"><span>アオノリュウゼツラン</span></li>
-                        <li data="00002"><img src="./image/flower/アカリファ.jpg" alt="植物画像"><span>アカリファ</span></li>
-                        <li data="00003"><img src="./image/flower/アリストロキア　ギガンティア.jpg" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
-                        <li data="00004"><img src="./image/flower/アルカンタレア　インペリアリス.jpg" alt="植物画像"><span></span></li>
-                        <li data="00005"><img src="./image/flower/エピフィラムプミラム.jpg" alt="植物画像"><span></span></li> -->
-                    <!--</div>-->
-                    <!--<div class="flower_right">-->
-                        <!-- <li><img src="./image/flower/カエンボク.jpg" alt="植物画像"><span></span></li>
-                        <li><img src="./image/flower/カカオ.jpg" alt="植物画像"><span></span></li>
-                        <li><img src="./image/flower/グレビレアピーチズアンドクリーム.jpg" alt="植物画像"><span></span></li>
-                        <li><img src="" alt="植物画像"><span></span></li>
-                        <li><img src="" alt="植物画像"><span></span></li> -->
-                    <!--</div>-->
-                    </div>
+                    <!-- liタグをクリックし、jsでdata属性を読みとり非同期通信を行う -->   
+                    <li data="00001"><img src="./img/flower-sample.png" alt="植物画像"><span>アオノリュウゼツラン</span></li>
+                    <li data="00002"><img src="./img/flower-sample.png" alt="植物画像"><span>アカリファ</span></li>
+                    <li data="00003"><img src="./img/flower-sample.png" alt="植物画像"><span>アリストロギア ギガンティア</span></li>
+                    <li data="00004"><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li data="00005"><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
+                    <li><img src="./img/flower-sample.png" alt="植物画像"><span>テキストテキスト</span></li>
                 </ul>
             </div>
             <!-- モーダルウィンドウ -->
@@ -159,7 +127,6 @@
                         </div>
                     </div>
                 </button>
-                
             </div>
         </main>
         <!--footerを指定-->
