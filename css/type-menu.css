@@ -4,14 +4,16 @@
     width: 100%;
     height: 100%; 
     flex-direction: row;
+    font-weight: 600
 }
 
 .tab-1 {
     display: flex;
+    width: 90%;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 0 10px;
-    width: 90vw;
-    
+    justify-content: center;
+    gap: 0 calc(4% / 4);
 }
 
 .tab-1 > label {
@@ -23,7 +25,6 @@
     padding: .6em 1em;
     border-radius: 5px 5px 0 0;
     background-color: rgba(125, 232, 163, 0.466);
-    border-color: #009048;
     color: #fff;
     font-size: 1.22rem;
     text-align: center;

@@ -1,0 +1,14 @@
+.panel-area{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    text-align: center;
+}
+
+.map img {
+    width: 40%;
+}

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/book.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/flower.css">
+    <link rel="stylesheet" href="./css/map.css">
 </head>
 <body>
     <div class="container">
@@ -46,18 +47,40 @@
                     <div id="content-1">
                         <div class="filter">
                             <div class="type">
-                                <button class="button-ty1">木</button>
-                                <button class="button-ty2">草</button>
-                                <button class="button-ty3">花</button>
-                                <button class="button-ty4">果物</button>
-                                <button class="button-ty5">その他</button>
+                                <div class="selectbox-1">
+                                    <select class="mySelect">
+                                        <option value="1" selected>季節表示</option>
+                                        <option value="2">月表示</option>
+                                        <option value="3">分類表示</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="season">
-                                <button class="button-haru">春</button>
+                                <label id="loadtab-haru">
+                                    <input type="radio" name="tab-2">
+                                    <span>春</span>
+                                </label>
+                                <label id="loadtab-natu">
+                                    <input type="radio" name="tab-2">
+                                    <span>夏</span>
+                                </label>
+                                <label id="loadtab-aki">
+                                    <input type="radio" name="tab-2">
+                                    <span>秋</span>
+                                </label>
+                                <label id="loadtab-huyu">
+                                    <input type="radio" name="tab-2">
+                                    <span>冬</span>
+                                </label>
+                                <label id="loadtab-nenzyu">
+                                    <input type="radio" name="tab-2" checked>
+                                    <span>年中</span>
+                                </label>
+                                <!-- <button class="button-haru">春</button>
                                 <button class="button-natu">夏</button>
                                 <button class="button-aki">秋</button>
                                 <button class="button-huyu">冬</button>
-                                <button class="button-nenzyu">年中</button>
+                                <button class="button-nenzyu">年中</button> -->
                             </div>
                         </div>
                     </div>
@@ -67,7 +90,18 @@
                         <span>植物マップ</span>
                     </label>
                     <div id="content-2">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
+                        <div class="panel-area">
+                            <div class="panel-active">
+                                <div class="map">
+                                    <img src="./img/map.png" alt="園内マップ">
+                                </div>
+                                <div class="area-menu">
+                                    <div class="area active"><h3>エリア1</h3></div>
+                                    <div class="area"><h3>エリア2</h3></div>
+                                    <div class="area"><h3>エリア3</h3></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>     
             </div>
