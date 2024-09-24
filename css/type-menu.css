@@ -1,23 +1,25 @@
 .type-menu {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 10vh; 
     
 }
 
 .tab-1 {
     display: flex;
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 0 10px;
-    max-width: 500px;
+    justify-content: center;
+    gap: 0 calc(4% / 4);
 }
 
 .tab-1 > label {
-    flex: 1 1;
-    order: -1;
-    opacity: 1;
-    min-width: 70px;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: .6em 1em;
     border-radius: 5px 5px 0 0;
     background-color: rgb(50, 201, 103);

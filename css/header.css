@@ -14,9 +14,8 @@ body{
     width: 100%;
     margin: 0;
 }
-
 /*headerのデザイン*/
-.header{
+header{
     background-color: white;
     position: fixed;
     width: 100%;
@@ -24,6 +23,7 @@ body{
     top: 0;
     margin-bottom: 1vh;
     margin-left: 0;
+    z-index: 9999;
 }
 
 .fixed{
@@ -32,10 +32,9 @@ body{
     width: 100%;
     top: 0;
     height: 10vh;
-    
-    /*padding-top: ;*/
 }
 
+/*headerの左部分*/
 .logo{
     /* margin: auto;
     width: 10%;
@@ -50,14 +49,16 @@ body{
     margin: 1%;
 }
 
+/*headerの右部分(languageなど)*/
 .fixed_right{
-    width: 5vw;
-    aspect-ratio: 1/1;
+    width: 10vw;
+    aspect-ratio: 1;
     float: right;
 }
 
 .fixed_right img{
     width: 80%;
     margin: 10%;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(42%) saturate(716%) hue-rotate(64deg) brightness(93%) contrast(92%);
 }
 
