@@ -53,16 +53,46 @@ document.getElementById('loadtab-2').addEventListener('click', () => {
       });
 });
 
-document.getElementById('loadtab-3').addEventListener('click', () => {
-    // 非同期でデータを取得
-    fetch('#')
-      .then(response => response.json()) // JSON形式でレスポンスをパース
-      .then(data => {
-        // データをHTMLに反映
-        const contentDiv = document.getElementById('content-3');
-        contentDiv.innerHTML = `<h2>${data.title}</h2><p>${data.body}</p>`;
-      })
-      .catch(error => {
-        console.error('エラー:', error);
-      });
+document.querySelector('.mySelect').addEventListener('change', function() {
+  const selectedValue = this.value;
+  const styledElement = document.querySelector('.season');
+  
+  if (selectedValue === '1') {
+      styledElement.classList.add('styled');
+  } else {
+      styledElement.classList.remove('styled');
+  }
 });
+
+document.querySelector('.mySelect').addEventListener('change', function() {
+  const selectedValue = this.value;
+  const styledElement = document.querySelector('.month');
+  
+  if (selectedValue === '1') {
+      styledElement.classList.add('styled');
+  } else {
+      styledElement.classList.remove('styled');
+  }
+});
+
+document.querySelector('.mySelect').addEventListener('change', function() {
+  const selectedValue = this.value;
+  const styledElement = document.querySelector('.kind');
+  
+  if (selectedValue === '1') {
+      styledElement.classList.add('styled');
+  } else {
+      styledElement.classList.remove('styled');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const initialValue = document.querySelector('.mySelect').value;
+  const styledElement = document.querySelector('.season');
+  
+  if (initialValue === '1') {
+      styledElement.classList.add('styled');
+  }
+});
+
+

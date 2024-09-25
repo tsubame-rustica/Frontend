@@ -33,7 +33,7 @@
     opacity: .8;
 }
 
-.tab-1 input {
+.tab-1 #tab  {
     display: none;
 }
 
