@@ -4,24 +4,26 @@
 <!--HTMLで記述された文書であることを示す-->
 <html>
 <!--Webブラウザでは表示されない設定や内容を記述する-->
-    <head>
-        <!--文字コードを指定-->
-        <meta charset="UTF-8">
-        <!--Webページのタイトルを指定-->
-        <title>花回廊デザイン</title>
-        <!--ファイルを読み込む-->
-        <!-- <link rel="stylesheet" href="./css/main.css"> -->
-        <link rel="stylesheet" href="./css/sanitize.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/footer.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/filter.css">
-        <link rel="stylesheet" href="./css/modal.css">
-        <link rel="stylesheet" href="./css/type-menu.css">
-        <link rel="stylesheet" href="./css/book.css">
-    </head>
-    <body>
+<head>
+    <!--文字コードを指定-->
+    <meta charset="UTF-8">
+    <!--Webページのタイトルを指定-->
+    <title>花回廊デザイン</title>
+    <!--ファイルを読み込む-->
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/sanitize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/type-menu.css">
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/map.css">
+</head>
+<body>
+    
         <!--headerを指定-->
         <header>
                 <div class="fixed">
@@ -42,62 +44,66 @@
             <div class="type-menu">
                 <div class="tab-1">
                     <label id="loadtab-1">
-                        <input type="radio" name="tab-1" checked>
+                        <input type="radio" name="tab-1" checked id="tab">
                         <span>図鑑</span>
                     </label>
-                    <!-- <div id="content-1">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
-                    </div> -->
-                
-                    <label id="loadtab-2">
-                        <input type="radio" name="tab-1">
-                        <span>植物マップ</span>
-                    </label>
-                    <!-- <div id="content-2">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
-                    </div> -->
-                
-                    <label id="loadtab-3">
-                        <input type="radio" name="tab-1">
-                        <span>植物一覧</span>
-                    </label>
-                    <!-- <div id="content-3">
-                        ここで非同期通信を行い、植物の情報を取得し表示する
-                    </div> -->
-                </div>     
-            </div>
-            <div class="illustrated-book">
-                <div class="change"></div>
-                    <div class="switch-tab">
-                        <button type="button" class="switch-button">表示切替</button>
-                        <div class="filter-detail">
-                            <button type="button" class="switch-button">季節切替</button>
-                            <button type="button" class="switch-button">月切替</button>
-                            <button type="button" class="switch-button">分類表示</button>
+                    <div id="content-1">
+                        <div class="filter">
+                            <div class="type">
+                                <div class="selectbox-1">
+                                    <select class="mySelect">
+                                        <option value="1" selected>季節表示</option>
+                                        <option value="2">月表示</option>
+                                        <option value="3">分類表示</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="season">
+                                <label id="loadtab-haru">
+                                    <input type="radio" name="tab-2">
+                                    <span>春</span>
+                                </label>
+                                <label id="loadtab-natu">
+                                    <input type="radio" name="tab-2">
+                                    <span>夏</span>
+                                </label>
+                                <label id="loadtab-aki">
+                                    <input type="radio" name="tab-2">
+                                    <span>秋</span>
+                                </label>
+                                <label id="loadtab-huyu">
+                                    <input type="radio" name="tab-2">
+                                    <span>冬</span>
+                                </label>
+                                <label id="loadtab-nenzyu">
+                                    <input type="radio" name="tab-2" checked>
+                                    <span>年中</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="season">
-                    <button type="button" class="spring"><h3>春</h3></button>
-                    <button type="button" class="summer"><h3>夏</h3></button>
-                    <button type="button" class="autumn"><h3>秋</h3></button>
-                    <button type="button" class="winter"><h3>冬</h3></button>
-                    <button type="button" class="year"><h3>年中</h3></button>
-                </div>
-            </div>
-            <div class="panel-area">
-                <div class="panel active">
-                    <img src="./image/guide_map.png" alt="園内マップ">
-                    <div class="area-menu">
-                        <div class="area active"><h3>エリア1</h3></div>
-                        <div class="area"><h3>エリア2</h3></div>
-                        <div class="area"><h3>エリア3</h3></div>
+                
+                    <label id="loadtab-2">
+                        <input type="radio" name="tab-1" id="tab">
+                        <span>植物マップ</span>
+                    </label>
+                    <div id="content-2">
+                        <div class="panel-area">
+                            <div class="panel-active">
+                                <div class="map">
+                                    <img src="./img/map.png" alt="園内マップ">
+                                </div>
+                                <div class="area-menu">
+                                    <div class="area active"><h3>エリア1</h3></div>
+                                    <div class="area"><h3>エリア2</h3></div>
+                                    <div class="area"><h3>エリア3</h3></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div>     
             </div>
-            <div class="itiran">
-                <div class="search">検索バー</div>
-            </div>
+            
             <div class="flower">
                 <ul id="flower-list">
                     <!-- DBで画像や名前を取得しliタグを生成 -->

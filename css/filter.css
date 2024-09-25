@@ -6,114 +6,243 @@
     width: 100%;
     border-bottom: solid 0.1em #C8C8C8;
 }
-
-.switch-tab {
-    width: 100%;
-}
-
-.switch-tab button {
-    border: solid 0.5px #444;
-}
-
-.switch-tab > button {
-    width: 100%;
-}
-
-.filter-detail {
+.filter {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
     width: 100%;
 }
 
-/*type-menuの各要素type activeの配置*/
-.filter-detail button:nth-child(1){
-    position: relative;
-    padding: 0.5em;
+.season {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 70%;
+    background-color: #fff;
+}
+
+.month {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 70%;
     background-color: #ffffff;
-    color: #E02F24;
-
-    /* 選択されたタブに適用 */
-    /* border-top: solid 0.1em #C8C8C8;
-    border-right: solid 0.1em #C8C8C8;
-    border-left: solid 0.1em #C8C8C8;
-    border-bottom: solid 0.1em #ffffff; */
 }
 
-.filter-detail button:nth-child(2) {
-    position: relative;
-    padding: 0.5em;
-    background: #D4FFCD;
-    color: #1BC92D;
-}
-
-.filter-detail button:nth-child(3) {
-    position: relative;
-    padding: 0.5em;
-    background: #D4FFCD;
-    color: #DAC967;
-}
-
-.switch-tab .filter-detail > * {
-    width: calc(100% / 3);
-    text-align: center;
-}
-
-
-.season{
-    position: relative;
-    height: 3.4em;
-    width: 100%;
-    font-size: 2.5em;
+.bar {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 70%;
+    background-color: #fff;
 }
 
-.season > * {
-    width: 25%;
+.kind {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 70%;
+    background-color: #fff;
 }
 
-.season > * > * {
-    display: block;
-    margin: 0;
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: 20%;
+    background-color: #fff;
 }
 
-.spring{
-    color: #FF00A8;
+.season > #loadtab-haru {
+    flex: 1 1;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color:#fcced9;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    order: -1;
 }
 
-.summer{
-    color: #1CCF4E;
+.season > #loadtab-natu {
+    flex: 1 1;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color:#b5d8dd;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    order: -1;
 }
 
-.autumn{
-    color: #F38927;
+.season > #loadtab-aki {
+    flex: 1 1;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color:#ffc393;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    order: -1;
 }
 
-.winter{
-    color: #8A8282;
+.season > #loadtab-huyu {
+    flex: 1 1;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color:#dadada;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    order: -1;
 }
 
-.year{
-    color: #3C7EFF;
+.season > #loadtab-nenzyu {
+    flex: 1 1;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color:#66f7ae;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    order: -1;
 }
 
-.panel{
-    float: left;
+.season > #loadtab-haru:has(:checked) {
+    opacity: 1;
+    background-color: #fc5e83;
+}
+.season > #loadtab-natu:has(:checked) {
+    opacity: 1;
+    background-color:#00a6c0;
+}
+.season > #loadtab-aki:has(:checked) {
+    opacity: 1;
+    background-color:#eb6a00;
+}
+.season > #loadtab-huyu:has(:checked) {
+    opacity: 1;
+    background-color:#666666;
+}
+.season > #loadtab-nenzyu:has(:checked) {
+    opacity: 1;
+    background-color: #009048;
+}
+
+.season input {
+    display: none;
+}
+
+.selectbox-container {
+    width: 100%; /* 親要素の最大幅 */
+    margin: 0 auto; /* 中央揃え */
+}
+
+.selectbox-1 {
+    position: relative;
+    width: 100%; /* 親要素に合わせて幅を100%に */
+}
+
+.selectbox-1 select {
+    font-weight: 600;
+    appearance: none;
+    width: 100%; /* 幅を100%に */
+    height: 2.8rem; /* 高さ */
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem; 
+    padding-left: 0.4rem; /* 左右のパディング */
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box; /* パディングを含めた幅計算 */
+}
+
+.selectbox-1::before,
+.selectbox-1::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-1::before {
+    display: inline-block;
+    right: 0;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 3px 3px 0;
+    background-color: #2589d0;
+}
+
+.selectbox-1::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.selectbox-1 select:focus {
+    outline: 2px solid #2589d0;
+}
+
+.bar {
+    z-index: 100;
     width: 100%;
-    text-align: center;
+    height: 100%;
 }
 
-.bar{
-    display: none;
-    /*display: inline-block;*/
-    text-align: center;
-}
-
-.panel-area{
-    float: left;
-    display: none;
-}
-
-.itiran{
-    display: none;
-    float: left;
+.styled {
+    display: flex;
 }
