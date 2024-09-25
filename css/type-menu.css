@@ -2,21 +2,21 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10vh; 
+    height: 5vw; 
     
 }
 
-.tab-1 {
+.tab{
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 calc(4% / 4);
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    justify-content: space-between;
 }
 
-.tab-1 > label {
-    width: 32%;
+.tablinks{
+    opacity: 0.5;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,29 +26,53 @@
     color: #fff;
     font-size: .9em;
     text-align: center;
-    cursor: pointer;
+    border: none;
 }
 
-.tab-1 > label:hover {
-    opacity: .8;
+.tablinks:hover{
+    opacity: 1;
 }
 
-.tab-1 #tab  {
+.tab-content{
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    background-color: white;
+    justify-content: center;
+}
+
+.filter{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    justify-content: space-between;
+    
+}
+
+.type{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.season{
     display: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 20%;
 }
 
-.tab-1 > div {
+.map{
     display: none;
     width: 100%;
-    padding: 1.5em 1em;
-    background-color: #fff;
+    height: 100%;
+    justify-content: center;
 }
 
-.tab-1 label:has(:checked) {
-    opacity: 1;
-    background-color: #08bd14;
-}
-
-.tab-1 label:has(:checked) + div {
-    display: block;
+.styled{
+    display: flex;
 }

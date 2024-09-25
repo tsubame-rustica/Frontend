@@ -1,5 +1,5 @@
 let index = 0;
-
+console.log('main.js');
 
 let flower_element = document.querySelectorAll('ul#flower-list li');
 
@@ -24,7 +24,7 @@ close.addEventListener('click', function() {
     modal.style.display = 'none';
 
 });
-
+/*
 document.getElementById('loadtab-1').addEventListener('click', () => {
     // 非同期でデータを取得
     fetch('#')
@@ -38,7 +38,8 @@ document.getElementById('loadtab-1').addEventListener('click', () => {
         console.error('エラー:', error);
       });
 });
-
+*/
+/*
 document.getElementById('loadtab-2').addEventListener('click', () => {
     // 非同期でデータを取得
     fetch('#')
@@ -52,7 +53,7 @@ document.getElementById('loadtab-2').addEventListener('click', () => {
         console.error('エラー:', error);
       });
 });
-
+*/
 document.querySelector('.mySelect').addEventListener('change', function() {
   const selectedValue = this.value;
   const styledElement = document.querySelector('.season');
@@ -66,9 +67,9 @@ document.querySelector('.mySelect').addEventListener('change', function() {
 
 document.querySelector('.mySelect').addEventListener('change', function() {
   const selectedValue = this.value;
-  const styledElement = document.querySelector('.month');
+  const styledElement = document.querySelector('.year');
   
-  if (selectedValue === '1') {
+  if (selectedValue === '2') {
       styledElement.classList.add('styled');
   } else {
       styledElement.classList.remove('styled');
@@ -78,21 +79,20 @@ document.querySelector('.mySelect').addEventListener('change', function() {
 document.querySelector('.mySelect').addEventListener('change', function() {
   const selectedValue = this.value;
   const styledElement = document.querySelector('.kind');
-  
-  if (selectedValue === '1') {
+  console.log('kind');
+  if (selectedValue === '3') {
       styledElement.classList.add('styled');
   } else {
       styledElement.classList.remove('styled');
   }
 });
-
+console.log('kind');
 document.addEventListener('DOMContentLoaded', function() {
   const initialValue = document.querySelector('.mySelect').value;
   const styledElement = document.querySelector('.season');
-  
+  console.log('season');
   if (initialValue === '1') {
       styledElement.classList.add('styled');
+      console.log('season');
   }
 });
-
-
